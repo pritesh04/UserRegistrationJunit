@@ -18,4 +18,14 @@ public class Registration {
 		}
 		return false;
 	}
+
+	public Boolean valid_EmailId(String email) {
+		String Uc3="[a-zA-Z0-9.]{1,}[@][a-z]{2,}[.][a-z]{2,3}[.][a-z]{2,3}";
+		
+		if(email.matches(Uc3))
+		{
+			return true;
+		}
+		return false;
+	}
 }
