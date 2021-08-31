@@ -28,4 +28,14 @@ public class Registration {
 		}
 		return false;
 	}
+
+	public Boolean valid_MobileNumber(String mobNo) {
+		String Uc4="^[91]{2}\s[0-9]{10}";
+		
+		if(mobNo.matches(Uc4))
+		{
+			return true;
+		}
+		return false;
+	}
 }
