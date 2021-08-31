@@ -38,4 +38,14 @@ public class Registration {
 		}
 		return false;
 	}
+
+	public Boolean valid_PasswordWith8Characters(String password) {
+		String Uc5="[a-zA-Z]{8,}";
+		
+		if(password.matches(Uc5))
+		{
+			return true;
+		}
+		return false;
+	}
 }

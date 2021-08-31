@@ -26,6 +26,12 @@ public class RegistrationTest {
 		Registration re = new Registration();
 		Assert.assertEquals(true, re.valid_MobileNumber("91 8928877307"));
 	}
+
+	@Test
+	public void valid_PasswordWith8Characters() {
+		Registration re = new Registration();
+		Assert.assertEquals(true, re.valid_PasswordWith8Characters("priteshraj"));
+	}
 	
 	
 }
