@@ -9,4 +9,13 @@ public class Registration {
 		}
 		return false;
 	}
+
+	public boolean valid_LastName(String name) {
+		String Uc1 = "^[A-Z][a-zA-z]{2,}";
+
+		if (name.matches(Uc1)) {
+			return true;
+		}
+		return false;
+	}
 }
