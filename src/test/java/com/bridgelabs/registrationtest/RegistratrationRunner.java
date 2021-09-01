@@ -9,12 +9,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import com.bridgelabs.registrationregex.MoodAnalyserException;
 import com.bridgelabs.registrationregex.Registration;
 
 @RunWith(Parameterized.class)
 public class RegistratrationRunner {
 	private String email;
-
+	
 	public RegistratrationRunner(String email) {
 		this.email = email;
 	}
@@ -27,7 +28,7 @@ public class RegistratrationRunner {
 	}
 
 	@Test
-	public void testEmailId() {
+	public void testEmailId() throws MoodAnalyserException {
 		Registration registration = new Registration();
 		Assert.assertEquals(true, registration.valid_EmailId(email));
 	}
