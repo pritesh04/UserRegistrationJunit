@@ -14,7 +14,7 @@ public class RegistrationTest {
 	@Test
 	public void valid_LastName() {
 		Registration re = new Registration();
-		Assert.assertEquals(true, re.valid_LastName("Pritesh"));
+		Assert.assertEquals(true, re.valid_LastName("Bhangale"));
 	}
 	@Test
 	public void valid_EmailId() {
