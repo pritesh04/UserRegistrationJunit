@@ -27,7 +27,7 @@ public class RegistrationTest {
 	@Test
 	public void valid_LastName() throws MoodAnalyserException {
 		Registration re = new Registration();
-		Assert.assertEquals(true, re.valid_LastName("Pritesh"));
+		Assert.assertEquals(true, re.valid_LastName("Bhangale"));
 	}
 
 	@Test
